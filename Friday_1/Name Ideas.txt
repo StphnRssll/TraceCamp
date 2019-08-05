@@ -1,0 +1,11 @@
+--------PhraseFinder
+Quotecatcher
+--------Quotation
+Quoter
+Quote
+YTQuote
+YT
+
+prototype name: phrasefinder
+
+project name: ???
