@@ -1,0 +1,26 @@
+{% load static %}
+<html>
+    <head>
+        <title>Phrase Finder</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <!–– <link rel="stylesheet" href="{% static 'css/vidsearch_app.css' %}"> -->
+        <link rel="stylesheet" href="./newResults.css">
+    </head>
+    <body>
+        <h3>
+            YouTube PhraseFinder
+        </h3>
+            {% for title in top_vid_titles %}
+                <div>
+                    Title: {{title}}
+                </div>
+            {% endfor %}
+            {% for vid_id in top_vid_ids %}
+                <div>
+                    <a href="https://www.youtube.com/watch?v={{vid_id}}"><img src=https://i.ytimg.com/vi/{{vid_id}}/hqdefault.jpg>
+                </div>
+            {% endfor %}
+
+    </body>
+</html>

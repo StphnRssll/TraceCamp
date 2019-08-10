@@ -10,7 +10,7 @@ function App() {
 
  
 
-  useEffect(() => {
+  useEffect( () => {
     getPlanets(page).then(
       (planets) => setPlanets(planets.data.results),
       (error) => console.log(error)
@@ -33,6 +33,5 @@ function App() {
       </div>
     );
 }
-
 
 export default App;
